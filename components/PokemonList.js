@@ -7,7 +7,7 @@ const PokemonList = ({pokemon}) => {
   return (
     <div className={pokemonStyles.grid}>
         {pokemon.map((eachPokemon, key) => {
-     return <PokemonItem pokemon={eachPokemon} />
+     return <PokemonItem pokemon={eachPokemon} key={key} />
     })}
   
     </div>
